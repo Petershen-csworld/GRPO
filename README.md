@@ -83,25 +83,31 @@ $$
 由Flow-GRPO Appx A：
 
 $$\frac{dx}{dt} = v(x,t)$$
+
  的 marginal distribution与
 
 $$
 dx_t = (v_t(x_t) + \frac{\sigma_t^2}{2}\nabla logp_{t}(x_t))dt + \sigma_{t} dw
 $$ 
+
 相同
 
 由linear interpolation得
 $$
 x_t = \alpha_t x_0 + \beta_t x_1=(1-t)x_0 + tx_1
 $$
+
 $$
 p_{t|1}(x_t | x_1) = \mathcal{N}(x_t|\beta_tx_1, \alpha_t^2)
 $$
+
 score function
 $$
 \nabla log p_{t|1}(x_t|x_1) = -\frac{x_0}{\alpha_t}
 $$
+
 marginal score 
+
 $$
 \nabla log p_{t}(x_t) = -\frac{1}{\alpha_t} \mathbb{E}[x_0|x_t]
 $$
@@ -118,6 +124,8 @@ v_t(x) &= \mathbb{E}[\dot{\alpha_t}x_0 + \dot{\beta_t}x_1|x_t = x] \\
                     &= \frac{t}{1-t} v_t(x) - \frac{1}{1 - t}x
 \end{aligned}
 $$
+
+
 带入SDE
 
 $$
@@ -125,6 +133,8 @@ $$
 d x_t &= (v_t(x_t) + \frac{\sigma_t^2t}{2(1-t)}v_t - \frac{\sigma_t^2}{2(1- t)}x)dt + \sigma_t dw\\
 \end{aligned}
 $$
+
+
 Euler离散化微分方程
 
 $$
@@ -139,4 +149,6 @@ $$
 $$
 \sigma_t = \sqrt{\frac{1 - t}{t}}\alpha 
 $$
+
+
 $\alpha$ 是 noise level
