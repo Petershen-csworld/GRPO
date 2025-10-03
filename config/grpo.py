@@ -161,7 +161,7 @@ def geneval_sd3():
     return config
 
 def pickscore_showo2():
-    gpu_number=1
+    gpu_number=4
     config = compressibility()
     config.dataset = os.path.join(os.getcwd(), "dataset/pickscore")
 

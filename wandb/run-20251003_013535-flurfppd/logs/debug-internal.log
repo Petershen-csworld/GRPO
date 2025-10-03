@@ -1,8 +1,0 @@
-{"time":"2025-10-03T01:35:35.283562619Z","level":"INFO","msg":"using version","core version":"0.18.7"}
-{"time":"2025-10-03T01:35:35.283581799Z","level":"INFO","msg":"created symlink","path":"/mnt/sphere/2025intern/has052/GRPO/FlowGRPO_Showo/wandb/run-20251003_013535-flurfppd/logs/debug-core.log"}
-{"time":"2025-10-03T01:35:35.493496483Z","level":"INFO","msg":"created new stream","id":"flurfppd"}
-{"time":"2025-10-03T01:35:35.493554213Z","level":"INFO","msg":"stream: started","id":"flurfppd"}
-{"time":"2025-10-03T01:35:35.493585123Z","level":"INFO","msg":"writer: Do: started","stream_id":"flurfppd"}
-{"time":"2025-10-03T01:35:35.493614723Z","level":"INFO","msg":"sender: started","stream_id":"flurfppd"}
-{"time":"2025-10-03T01:35:35.493653693Z","level":"INFO","msg":"handler: started","stream_id":"flurfppd"}
-{"time":"2025-10-03T01:35:35.721026853Z","level":"INFO","msg":"Starting system monitor"}
