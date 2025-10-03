@@ -63,6 +63,9 @@ num_image_per_prompt: rollout大小
 batch_size: 每张卡上推理图片数量
 
 
+num_batches_per_epoch = int(16/(gpu_number*config.sample.train_batch_size/config.sample.num_image_per_prompt)): 分子控制每个epoch里面batch大小，论文默认是48
+
+
 
 # SDE showo2的实现 
 
