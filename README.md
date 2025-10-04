@@ -66,6 +66,19 @@ batch_size: 每张卡上推理图片数量
 num_batches_per_epoch = int(16/(gpu_number*config.sample.train_batch_size/config.sample.num_image_per_prompt)): 分子控制每个epoch里面batch大小，论文默认是48
 
 
+# 模型训练参数
+
+```
+  # freeze parameters of models to save more memory
+  for name, param in model.named_parameters():
+        if "diffusion" not in name:
+            param.requires_grad = False
+        else:
+            param.requires_grad = True
+            print(name)
+```
+这里是只训练了diffusion head(0.8B), 全参需要把所有都设成 requires_grad = True
+
 
 # SDE showo2的实现 
 
