@@ -92,7 +92,9 @@ $$
 \frac{dx}{dt} = v_{\theta}(x,t) \\
 x_0 \sim p_{data}, x_{1} \sim \mathcal{N}(0,I)
 $$
+
 Showo2
+
 $$
 \frac{dx}{dt} = v_{\theta}(x,t) \\
  x_{0} \sim \mathcal{N}(0,I), x_1 \sim p_{data}
