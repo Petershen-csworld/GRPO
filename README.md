@@ -42,8 +42,10 @@ train_showo2: 训练代码
 sys.path.insert(0, '/mnt/sphere/2025intern/has052/GRPO/show-o2')
 ```
 ./flow_grpo/diffusers_patch/showo2_pipeline_with_logprob.py 第二行 
+
 ./train_showo2.py 第三行 需要改成本地/相对路径
-showo2代码在 ./GRPO/FlowGRPO_Showo/show-o2
+
+showo2代码在 ./show-o2
 
 ## 2.
 train_showo2第394行
